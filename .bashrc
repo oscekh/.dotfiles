@@ -13,13 +13,14 @@ alias "mp3=youtube-dl --extract-audio --audio-format mp3"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 function smaug () {
-	echo "$1" | cowsay -f dragon
+    echo "$1" | cowsay -f dragon
 }
 
 function milk () {
-	echo "$1" | cowsay -f milk
+    echo "$1" | cowsay -f milk
 }
 
+# used to show name the current git branch in prompt (from: https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt)
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
