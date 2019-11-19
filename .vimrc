@@ -14,7 +14,7 @@ set smartcase
 set hlsearch
 set incsearch
 
-" theme
+" theme (colors from: https://github.com/w0ng/vim-hybrid)
 syntax enable
 set background=dark
 colorscheme hybrid
