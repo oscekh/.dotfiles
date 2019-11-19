@@ -25,9 +25,3 @@ parse_git_branch() {
 }
 
 export PS1="\[$(tput bold)\]\[\033[38;5;242m\][\[$(tput sgr0)\]\[\033[38;5;167m\]\u@\h\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;159m\]\W\[$(tput sgr0)\]\[\033[38;5;242m\]]\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]\$(parse_git_branch)\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;242m\]\\$\[$(tput sgr0)\] "
-
-PATH="/home/oscekh/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/oscekh/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/oscekh/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/oscekh/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/oscekh/perl5"; export PERL_MM_OPT;
